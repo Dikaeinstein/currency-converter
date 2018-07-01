@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currency Converter</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
+  />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper teal">
+      <a href="#" class="brand-logo center">Currency Converter</a>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="row card pad3 marg3">
+      <form class="col s12 m12" id="currencyForm">
+        <div class="col s12 m6 input-field marg3 pad3">
+          <input
+            type="number" name="amount" id="amount"
+            placeholder="Enter amount to convert"
+            style="font-size: 2.5rem"
+            min="0"
+            required
+          />
+          <label for="amount" class="fontSize-md">Amount</label>
+        </div>
+        <div class="input-field col s12 m6" id="from">
+        </div>
+        <div class="input-field col s12 m6" id="to">
+        </div>
+        <div class="input-field col s12 m6">
+          <button
+            type="submit"
+            class="waves-effect waves-light btn center-align"
+            id="convertCurrency"
+            title="convert currency"
+          >
+            Convert
+          </button>
+        </div>
+      </form>
+      <div class="col s12">
+        <p class="fontSize-md center-align hide marg" id="result"></p>
+        <div id="preloader-container" class="center-align hide marg">
+          <!-- Circular preloader -->
+          <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-green-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"
+  ></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

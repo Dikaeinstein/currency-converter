@@ -1,0 +1,37 @@
+.pad {
+  padding: 0.5rem;
+}
+.pad2 {
+  padding: 1rem;
+}
+.pad3 {
+  padding: 2rem;
+}
+
+.marg {
+  margin: 0.5rem;
+}
+.marg2 {
+  margin: 1rem;
+}
+.marg3 {
+  margin: 2rem;
+}
+
+.fontSize-xs {
+  font-size: 0.5rem;
+}
+
+.fontSize-sm {
+  font-size: 1rem;
+}
+.fontSize-md {
+  font-size: 2rem;
+}
+.fontSize-lg {
+  font-size: 3rem;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1rem;
+}

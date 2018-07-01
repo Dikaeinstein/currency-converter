@@ -1,0 +1,15 @@
+{
+  "name": "currency-converter",
+  "version": "0.0.1",
+  "description": "Convert one currency to another while offline or online",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "http-server": "^0.11.1"
+  }
+}
